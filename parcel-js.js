@@ -1,18 +1,21 @@
-import {html, LitElement} from "https://cdn.skypack.dev/lit"
+import { html, LitElement } from "lit"
 
-class CdnTest extends LitElement {
+class ParcelJs extends LitElement {
   static get properties () {
     return {
       readonly: { reflect: true, type: Boolean }
     }
   }
-  constructor() {
+
+  constructor () {
     super()
     this.readonly = false
   }
+
   render () {
     return html`<button @click=${() => this.readonly = !this.readonly}>Readonly state: ${this.readonly}</button>`
   }
 }
 
-window.customElements.define("cdn-test", CdnTest)
+window.customElements.define("parcel-js", class extends ParcelJs{})
+

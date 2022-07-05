@@ -4,8 +4,7 @@
   "description": "Parcel2 + Lit Reflection issue",
   "source": "parcel-test.html",
   "scripts": {
-    "start:parcel": "parcel",
-    "start:cdn": "web-dev-server --app-index cdn-test.html"
+    "start": "parcel"
   },
   "keywords": [
     "parcel",
@@ -14,7 +13,6 @@
   "author": "Konnor Rogers",
   "license": "MIT",
   "dependencies": {
-    "@web/dev-server": "^0.1.32",
     "lit": "^2.2.7",
     "parcel": "^2.6.2"
   }
